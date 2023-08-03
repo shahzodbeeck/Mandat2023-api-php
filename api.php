@@ -38,7 +38,7 @@ curl_close($ch);
 if ($error) {
     echo "cURL Error: " . $error;
 } else {
-$tr_pattern = '/<tr>(.*?)<\/tr>/s';;
+$tr_pattern = '/<tr>(.*?)<\/tr>/s';
 preg_match_all($tr_pattern, $response, $matches222, PREG_SET_ORDER);
 $td_pattern = '/<td.*?>(.*?)<\/td>/s';
  preg_match_all($td_pattern, $matches222[1][1], $td_matches);
